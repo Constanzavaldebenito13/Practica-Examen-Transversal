@@ -117,8 +117,8 @@ def busqueda_precio(p_min,p_max):
         disponible=cartelera[codigo][1]
         if p_min <=precio <=p_max and disponible !=0:
             nombre=peliculas[codigo][0]
-        resultados.append(nombre + "--" + codigo)
-        resultados.sort()
+            resultados.append(nombre + "--" + codigo)
+            resultados.sort()
 
     if len(resultados)==0:
         print("No hay peliculas en ese rango de precios.")
