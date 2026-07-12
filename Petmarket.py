@@ -99,7 +99,7 @@ def busqueda_precio(p_min,p_max):
         precio=stock[codigo][0]
         disponibilidad=stock[codigo][1]
 
-        if p_min <=precio <=p_max and disponibilidad !="":
+        if p_min <=precio <=p_max and disponibilidad !=0:
             nombre=productos[codigo][0]
             resultados.append(nombre+"--"+codigo)
 
